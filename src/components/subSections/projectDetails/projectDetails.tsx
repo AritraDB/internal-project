@@ -1,15 +1,6 @@
 import * as React from 'react';
-import Typography from '@mui/material/Typography';
 import Paper from '@mui/material/Paper';
-import * as styledComp from './projectDetails.style';
-import { TextField } from '@mui/material';
-import MUITextField from '../../mui-components/MUITextField/MUITextField';
-import {
-  useForm,
-  SubmitHandler,
-  Controller,
-  FormProvider,
-} from 'react-hook-form';
+import { useForm, FormProvider } from 'react-hook-form';
 import { yupResolver } from '@hookform/resolvers/yup';
 import * as yup from 'yup';
 import AddProjectDetailsForm from '../../forms/AddProjectDetails/AddProjectDetailsForm';

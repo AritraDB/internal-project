@@ -1,8 +1,6 @@
-import React from 'react';
-import logo from './logo.svg';
+import * as React from 'react';
 import './App.css';
 import Dashboard from './components/containers/dashboard/dashboard';
-import SignInSide from './components/containers/login/SignInSide';
 
 function App() {
   return (

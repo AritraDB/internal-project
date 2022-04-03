@@ -1,11 +1,7 @@
 import * as React from 'react';
-import Typography from '@mui/material/Typography';
-import Paper from '@mui/material/Paper';
-import * as styledComp from './MUITextField.style';
 import { TextField } from '@mui/material';
-import { MUITextFieldProps } from '../../../types/application.type';
-import { TextFieldsOutlined } from '@mui/icons-material';
 import { Controller } from 'react-hook-form';
+import { MUITextFieldProps } from '../../../types/application.type';
 
 export default function MUITextField({
   label,

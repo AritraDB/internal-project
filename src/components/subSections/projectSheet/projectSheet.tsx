@@ -1,14 +1,8 @@
 import * as React from 'react';
 import Typography from '@mui/material/Typography';
 import Paper from '@mui/material/Paper';
-import * as styledComp from './projectSheet.style';
 
 export default function ProjectSheet() {
-  const [open, setOpen] = React.useState(true);
-  const toggleDrawer = () => {
-    setOpen(!open);
-  };
-
   return (
     <Paper
       sx={{
