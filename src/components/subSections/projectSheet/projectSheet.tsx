@@ -1,7 +1,7 @@
-import * as React from "react";
-import Typography from "@mui/material/Typography";
-import Paper from "@mui/material/Paper";
-import * as styledComp from "./projectSheet.style";
+import * as React from 'react';
+import Typography from '@mui/material/Typography';
+import Paper from '@mui/material/Paper';
+import * as styledComp from './projectSheet.style';
 
 export default function ProjectSheet() {
   const [open, setOpen] = React.useState(true);
@@ -13,8 +13,8 @@ export default function ProjectSheet() {
     <Paper
       sx={{
         p: 2,
-        display: "flex",
-        flexDirection: "column",
+        display: 'flex',
+        flexDirection: 'column',
         height: 240,
       }}
     >

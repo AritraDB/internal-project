@@ -31,7 +31,13 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "format": "prettier --write ."
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run format"
+    }
   },
   "eslintConfig": {
     "extends": [
@@ -52,6 +58,8 @@
     ]
   },
   "devDependencies": {
-    "@types/styled-components": "^5.1.24"
+    "@types/styled-components": "^5.1.24",
+    "husky": "^7.0.4",
+    "prettier": "2.6.2"
   }
 }

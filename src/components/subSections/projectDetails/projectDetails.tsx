@@ -1,24 +1,24 @@
-import * as React from "react";
-import Typography from "@mui/material/Typography";
-import Paper from "@mui/material/Paper";
-import * as styledComp from "./projectDetails.style";
-import { TextField } from "@mui/material";
-import MUITextField from "../../mui-components/MUITextField/MUITextField";
+import * as React from 'react';
+import Typography from '@mui/material/Typography';
+import Paper from '@mui/material/Paper';
+import * as styledComp from './projectDetails.style';
+import { TextField } from '@mui/material';
+import MUITextField from '../../mui-components/MUITextField/MUITextField';
 import {
   useForm,
   SubmitHandler,
   Controller,
   FormProvider,
-} from "react-hook-form";
-import { yupResolver } from "@hookform/resolvers/yup";
-import * as yup from "yup";
-import AddProjectDetailsForm from "../../forms/AddProjectDetails/AddProjectDetailsForm";
+} from 'react-hook-form';
+import { yupResolver } from '@hookform/resolvers/yup';
+import * as yup from 'yup';
+import AddProjectDetailsForm from '../../forms/AddProjectDetails/AddProjectDetailsForm';
 
 const schema = yup.object().shape({
   projectName: yup
     .string()
-    .required("Project Name is required")
-    .defined("Project Name is required"),
+    .required('Project Name is required')
+    .defined('Project Name is required'),
 });
 
 export interface formInterface {
@@ -41,7 +41,7 @@ export default function ProjectDetails() {
   // });
   const formMethods = useForm({
     resolver: yupResolver(schema),
-    mode: "all",
+    mode: 'all',
   });
 
   const formSubmit = (data: any) => {
@@ -52,8 +52,8 @@ export default function ProjectDetails() {
     <Paper
       sx={{
         p: 2,
-        display: "flex",
-        flexDirection: "column",
+        display: 'flex',
+        flexDirection: 'column',
         // height: 240,
       }}
     >

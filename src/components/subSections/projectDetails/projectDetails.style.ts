@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 export const topNavBgColor = styled.div`
   background-color: #1f70c1;

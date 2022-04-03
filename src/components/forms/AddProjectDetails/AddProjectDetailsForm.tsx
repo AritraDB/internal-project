@@ -1,6 +1,6 @@
-import React from "react";
-import MUITextField from "../../mui-components/MUITextField/MUITextField";
-import { useFormContext } from "react-hook-form";
+import React from 'react';
+import MUITextField from '../../mui-components/MUITextField/MUITextField';
+import { useFormContext } from 'react-hook-form';
 
 export default function AddProjectDetailsForm() {
   const {
@@ -18,10 +18,10 @@ export default function AddProjectDetailsForm() {
   return (
     <>
       <MUITextField
-        label={"Project Name"}
-        name={"projectName"}
+        label={'Project Name'}
+        name={'projectName'}
         control={control}
-        defaultValue={""}
+        defaultValue={''}
         required
         errors={errors.projectName}
       />
